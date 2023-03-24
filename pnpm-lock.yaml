@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ctrl/tinycolor': ^3.6.0
   '@nuxt/eslint-config': ^0.1.1
   '@nuxt/kit': ^3.3.1
   '@nuxt/module-builder': ^0.2.1
@@ -12,6 +13,7 @@ specifiers:
   vitest: ^0.29.3
 
 dependencies:
+  '@ctrl/tinycolor': 3.6.0
   '@nuxt/kit': 3.3.1
 
 devDependencies:
@@ -317,6 +319,11 @@ packages:
     dependencies:
       mime: 3.0.0
     dev: true
+
+  /@ctrl/tinycolor/3.6.0:
+    resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==}
+    engines: {node: '>=10'}
+    dev: false
 
   /@esbuild/android-arm/0.16.17:
     resolution: {integrity: sha512-N9x1CMXVhtWEAMS7pNNONyA14f71VPQN9Cnavj1XQh6T7bskqiLLrSca4O0Vr8Wdcga943eThxnVp3JLnBMYtw==}

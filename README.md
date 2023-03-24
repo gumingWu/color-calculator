@@ -1,3 +1,3 @@
-# nuxt-module-starter
+# nuxt-color-calculator
 
 My new Nuxt module
