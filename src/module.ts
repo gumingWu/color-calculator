@@ -17,11 +17,10 @@ export default defineNuxtModule<ModuleOptions>({
   async setup (options, nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    const runtimeDir = await resolver.resolve('./runtime')
-
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))
-    // addImports({ name: 'getRandomColor', from: resolve(runtimeDir, 'random') })
+
     addImports({ name: 'getRandomColor', from: resolver.resolve('./runtime/random') })
+    addImports({ name: 'calculate', from: resolver.resolve('./runtime/calculate') })
   }
 })
